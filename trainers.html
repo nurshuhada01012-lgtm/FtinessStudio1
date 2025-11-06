@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fitness Studio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family:'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .programs {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .program-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .program {
+      background-color: #fff3e0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 250px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+	  margin-top: 50px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .program-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+	.carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.7); /* dark background behind arrows */
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-size: 50%, 50%;
+    }
+
+    /* Optional: make arrows appear closer to the carousel edges */
+    .carousel-control-prev {
+      left: -50px;
+    }
+    .carousel-control-next {
+      right: -50px;
+    }
+
+    /* Make trainer images look nice */
+    .carousel-item img {
+      border: 5px solid #ddd;
+      padding: 5px;
+    }
+	 /* Trainer image style */
+    .trainer-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px; /* square with slightly rounded corners */
+  border: 4px solid #f0f0f0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin-top:50px;
+}
+
+    /* Text section */
+    .trainer-info h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+    }
+    .trainer-info p {
+      font-family: 'Roboto', sans-serif;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fitness Studio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="trainers.html">Trainers</a>
+      <a href="schedule page.html">Schedule</a>
+      <a href="registration.html">Register</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Come!Meet Out Trainers</h2>
+  </section>
+
+
+    <!-- Carousel Section -->
+  <div id="trainerCarousel" class="carousel slide container" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Trainer 1 -->
+      <div class="carousel-item active">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center">
+            <img src="trainer1.jpg" alt="Sarah Lee" class="trainer-img">
+          </div>
+          <div class="col-md-7 trainer-info">
+            <h3>Sarah Nong</h3>
+			<p>28 years old (VIETNAME)</p>
+            <h6 class="text-primary">Zumba Instructor</h6>
+            <p>With over 5 years of experience, Sarah brings high-energy Zumba classes that make fitness fun! Her dance routines are perfect for beginners and advanced participants alike.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trainer 2 -->
+      <div class="carousel-item">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center">
+            <img src="trainer2.jpg" alt="Mark Tan" class="trainer-img">
+          </div>
+          <div class="col-md-7 trainer-info">
+            <h3>Mark Tan</h3>
+			<p>33 years old (AUSTRALIA)</p>
+            <h6 class="text-primary">Personal Trainer</h6>
+            <p>Mark focuses on strength, conditioning, and overall wellness. He customizes workout plans to fit your goals and helps you stay motivated every step of the way.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trainer 3 -->
+      <div class="carousel-item">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center">
+            <img src="trainer3.jpg" alt="Aisha Rahman" class="trainer-img">
+          </div>
+          <div class="col-md-7 trainer-info">
+            <h3>Lee Jia Ying</h3>
+			<p>24 years old (MALAYSIA)</p>
+            <h6 class="text-primary">Yoga Coach</h6>
+            <p>Jia Ying specializes in yoga and mindfulness. Her calm and balanced teaching style helps clients improve flexibility and focus on inner peace.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#trainerCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#trainerCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Fitness Studio.</p>
+  </footer>
+
+
+ <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fitness Studio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .programs {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .program-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .program {
+      background-color: #fff3e0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 250px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .program-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fitness Studio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="trainers.html">Trainers</a>
+      <a href="schedule page.html">Schedule</a>
+      <a href="registration.html">Register</a>
+    </nav>
+  </header>
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mb-4 text-center">Register for a Free Trial Class</h1>
+    <p class="text-muted text-center">Fill in your details below to reserve your spot.</p>
+
+    <form id="trialForm" novalidate>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" id="fullName" class="form-control" required>
+          <div class="invalid-feedback">Please enter your full name.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" required>
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone (WhatsApp)</label>
+          <input type="tel" id="phone" class="form-control" pattern="[0-9+\\-() ]{7,20}" required>
+          <div class="invalid-feedback">Enter a valid phone number.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="preferredClass" class="form-label">Preferred Class</label>
+          <select id="preferredClass" class="form-select" required>
+            <option value="">Select a class</option>
+            <option>Yoga</option>
+            <option>Zumba</option>
+            <option>HIIT</option>
+            <option>Personal Training</option>
+          </select>
+          <div class="invalid-feedback">Please choose a class.</div>
+        </div>
+
+        <div class="col-12">
+          <label for="notes" class="form-label">Notes (Optional)</label>
+          <textarea id="notes" class="form-control" rows="3" placeholder="Any special needs or goals?"></textarea>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="consent" required>
+            <label class="form-check-label" for="consent">
+              I consent to FitStudio contacting me regarding my trial booking.
+            </label>
+            <div class="invalid-feedback">You must agree before submitting.</div>
+          </div>
+        </div>
+
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary mt-3">Submit Registration</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Registration Successful</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Thank you! Your trial class registration has been received. We will contact you soon to confirm the details.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer>
+    <p>&copy; 2025 Fitness Studio.</p>
+  </footer>
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+</body>
+</html>
+  
